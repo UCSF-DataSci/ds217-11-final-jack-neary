@@ -1,0 +1,79 @@
+===DATA CLEANING REPORT===
+
+Number of rows before cleaning: 196138
+
+Missing Data Handling:
+- Wet Bulb Temperature: 75859 missing values (38.676%)
+  Method: Forward-fill method ws used
+  Result: All missing values were filled
+- Total Rain: 75859 missing values (38.676%)
+  Method: Forward-fill method ws used
+  Result: All missing values were filled
+- Heading: 75859 missing values (38.676%)
+  Method: Forward-fill method ws used
+  Result: All missing values were filled
+- Rain Intensity: 75859 missing values (38.676%)
+  Method: Forward-fill method ws used
+  Result: All missing values were filled
+- Precipitation Type: 75859 missing values (38.676%)
+  Method: Forward-fill method ws used
+  Result: All missing values were filled
+- Barometric Pressure: 146 missing values (0.074%)
+  Method: Dropped NA rows because there were so few (<5%)
+  Result: All Missing values were dropped
+- Air Temperature: 75 missing values (0.038%)
+  Method: Dropped NA rows because there were so few (<5%)
+  Result: All Missing values were dropped
+
+Outlier handling:
+- Air Temperature: Detected 0 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-46.9, 72.8]
+  Result: 0 rows removed
+- Wet Bulb Temperature: Detected 0 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-40.3, 61.2]
+  Result: 0 rows removed
+- Humidity: Detected 0 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-12.0, 149.0]
+  Result: 0 rows removed
+- Total Rain: Detected 2714 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-550.9, 760.2]
+  Result: 2714 rows removed
+- Wind Direction: Detected 0 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-740.0, 1010.0]
+  Result: 0 rows removed
+- Wind Speed: Detected 2573 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-3.5, 8.4]
+  Result: 2573 rows removed
+- Maximum Wind Speed: Detected 220 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-10.8, 17.2]
+  Result: 220 rows removed
+- Barometric Pressure: Detected 106 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [965.0, 1023.8]
+  Result: 106 rows removed
+- Solar Radiation: Detected 17166 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [-393.0, 524.0]
+  Result: 17166 rows removed
+- Heading: Detected 27457 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [330.0, 379.0]
+  Result: 27457 rows removed
+- Battery Life: Detected 6 outliers using IQR method (threshold ±3*IQR)
+  Method: Removed rows beyond bounds
+  Bounds: [2.3, 24.7]
+  Result: 6 rows removed
+
+Data Type Conversions:
+ - Converted Measurement Timestamp to datetime
+
+Duplicates removed: 0
+
+Rows after cleaning: 121076

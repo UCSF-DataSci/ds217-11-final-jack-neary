@@ -1,0 +1,13 @@
+Measurement Timestamp
+barometric_pressure_rolling_7h
+barometric_pressure_rolling_12h
+humidity_rolling_12h
+humidity_rolling_24h
+gust_factor
+dew_point
+Rain Intensity_log
+Interval Rain_log
+Total Rain_log
+Wind Direction_log
+Maximum Wind Speed_log
+Solar Radiation_log

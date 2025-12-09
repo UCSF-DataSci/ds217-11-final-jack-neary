@@ -1,0 +1,12 @@
+===KEY PATTERNS IDENTIFIED===
+
+Temporal Trends:
+- Air Temperature is higher on average in the summer months, lower in the winter months
+- Humidity is higher on average in the summer months, lower in the winter months
+- Dew Point is higher on average in the summer and fall months, and lower in the winter and early spring months
+
+Correlations:
+- Dew Point has a very high positive correlation with Wet Bulb Temperature: r = 0.79
+- Wet Bulb Temperature has a high positive correlation with Air Temperature: r = 0.79
+- Gust Factor has a moderate positive correlation with Wind Direction: r = 0.42
+- Precipitation type has a moderate positive correlation with Rain Intensity: r = 0.55
