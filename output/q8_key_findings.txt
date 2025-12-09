@@ -1,0 +1,16 @@
+KEY FINDINGS SUMMARY
+====================
+- Random forest had the best performing metrics between train and test sets
+- XGBoost and Linear Regression seemed to overfit the data, the training metrics were lower than the test metrics
+- Made me feel weird so I chose to use Random Forest becuause train and test showed a somewhat normal pattern
+
+FEATURE IMPORTANCE
+Most important feature: Wet Bulb Temperature: 0.5872
+
+TEMPORAL PATTERNS
+- clear seasonal pattern for dew point feature
+
+DATA QUALITY
+Data cleaned from 196138 rows to 149408 rows
+Missing data handled with forward-fill and mean imputation
+Outliers capped using IQR

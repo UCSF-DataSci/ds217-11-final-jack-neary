@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Path to the folder containing your notebooks
+# path to notebooks
 NOTEBOOK_DIR="/Users/jack/ucsf_courses_resources/fall 2025/ds_217/ds217-11-final-jack-neary/run_project.sh"
 
-# List of your 7 notebooks in order
+# list of notebooks in order
 NOTEBOOKS=(
   "q1_setup_exploration.ipynb"
   "q2_data_cleaning.ipynb"
@@ -14,7 +14,7 @@ NOTEBOOKS=(
   "q7_modeling.ipynb"
 )
 
-# Loop through notebooks and execute each
+# loop through notebooks and execute each
 for NB in "${NOTEBOOKS[@]}"; do
     echo "Running $NB ..."
     jupyter nbconvert --to notebook --execute --inplace "$NOTEBOOK_DIR/$NB"

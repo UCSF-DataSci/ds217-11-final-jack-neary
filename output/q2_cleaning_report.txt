@@ -4,19 +4,19 @@ Number of rows before cleaning: 196138
 
 Missing Data Handling:
 - Wet Bulb Temperature: 75859 missing values (38.676%)
-  Method: Forward-fill method ws used
+  Method: Forward-fill method was used
   Result: All missing values were filled
 - Total Rain: 75859 missing values (38.676%)
-  Method: Forward-fill method ws used
+  Method: Forward-fill method was used
   Result: All missing values were filled
 - Heading: 75859 missing values (38.676%)
-  Method: Forward-fill method ws used
+  Method: Forward-fill method was used
   Result: All missing values were filled
 - Rain Intensity: 75859 missing values (38.676%)
-  Method: Forward-fill method ws used
+  Method: Forward-fill method was used
   Result: All missing values were filled
 - Precipitation Type: 75859 missing values (38.676%)
-  Method: Forward-fill method ws used
+  Method: Forward-fill method was used
   Result: All missing values were filled
 - Barometric Pressure: 146 missing values (0.074%)
   Method: Dropped NA rows because there were so few (<5%)
@@ -76,4 +76,8 @@ Data Type Conversions:
 
 Duplicates removed: 0
 
-Rows after cleaning: 121076
+Rows after cleaning: 149408---
+AUTOMATED EDIT: CAPPED `Total Rain` TO 200
+Rows with `Total Rain` > 200 before cap: 33748 (22.59%)
+Rationale: dataset contains very large `Total Rain` values that likely represent cumulative totals; for modeling we prefer bounded interval-like totals or to use `Interval Rain` instead. Capping at 200 mm enforces the domain bound used elsewhere in Q2. If values >200 are legitimately cumulative (months), consider using `Interval Rain` or transforming the variable instead.
+Change applied programmatically by assistant.
