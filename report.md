@@ -22,7 +22,7 @@ In this phase, the initial data inspection was performed. Here are some findings
 
 
 **Visualizations for data exploration:**
-![Visuals From Data Exploration](output/q1_visualizations.png)
+![Figure 1: Visuals From Data Exploration](output/q1_visualizations.png)
 - `Humidity` histogram
     - Normal distribution
 - `Air Temperature` histogram
@@ -97,7 +97,7 @@ Building on the cleaned data and temporal features, new features were created to
 ### Phase 6: Pattern Analysis
 
 Feature engineering visuals
-![Feature engineering Visuals](output/q5_patterns.png)
+![Figure 2: Feature engineering Visuals](output/q5_patterns.png)
 - Calculating the pearson coefficient (R) for each variable and visualizing the variables against themselves, we can see which variables have strong, or weak, correlations with each other and make a decision to pick with predictors will be used in the models. 
 
 Patterns Identified
@@ -195,7 +195,7 @@ Wet Bulb Temperature is the most important because it shows how much moisture is
 **Random Forest** was selected as the final predictive model because it demonstrated strong predictive power with consistent generalization behavior, avoiding the unusual train–test inversion observed in the other models.
 
 ### Phase 9: Results
-![FINAL VISUALIZATIONS](output/q8_final_visualizations.png)
+![Figure 1: FINAL VISUALIZATIONS](output/q8_final_visualizations.png)
 
 **Model Performance and Results: Random Forest Test Metrics**
 - R² = 0.87, shows how much of the variation is explained by the model. Meaning using these features, the model explains 87% of the variation in `dew_point`. 
@@ -204,9 +204,9 @@ Wet Bulb Temperature is the most important because it shows how much moisture is
 - ***Train vs test R²***
     - The Random Forest model achieved R² = 0.98 on the training data and R² = 0.87 on the test data. This small drop of ~0.1 indicates that while the model fits the training data very well, it still generalizes well on unseen data. The model captures most of the patterns in the features without blatent overfitting. 
 ## Visualizations
-![Visuals From Data Exploration](output/q1_visualizations.png)
-![Visuals From Data Exploration](output/q5_patterns.png)
-![Visuals From Data Exploration](output/q8_final_visualizations.png)
+![Figure 1: Visuals From Data Exploration](output/q1_visualizations.png)
+![Figure 2: Visuals From Data Exploration](output/q5_patterns.png)
+![Figure 3: Visuals From Data Exploration](output/q8_final_visualizations.png)
 
 ## Model Results
 - All model metrics are covered in the *Model Performance and Results* section above.
@@ -234,7 +234,7 @@ After completing the analysis, here are some insights, limitations and next step
     - Beyond prediction, this analysis can inform fog alerts, sensor placement, and city planning, bridging raw meteorological data to actionable public safety decisions.
 
 - **Limitation**
-- Learning how the models can act up and figure out what happened can be very tricky to figure out, but learning more about machine learning algorithms and these data science pipelines, being able to investigate unusual patterns (like this specific train/test issue?)helps build a deeper understanding of model behavior, potential limitations, and how to spot and handle errors that are made.
+    - Learning how the models can act up and figure out what happened can be very tricky to figure out, but learning more about machine learning algorithms and these data science pipelines, being able to investigate unusual patterns (like this specific train/test issue?)helps build a deeper understanding of model behavior, potential limitations, and how to spot and handle errors that are made.
 
-- **Next Steps**
-- In short: Being able to do a full front-to-back project like this is a very rewarding process and things are learned at each step of the way. Each stage of this workflow -from data exploration and cleaning, feature engineering, modeling and visualizations- offers insights, reinforces understanding of key concepts, and promotes learning and sharpening technical skills. 
+- **Conclusion**
+    - In short: Being able to do a full front-to-back project like this is a very rewarding process and things are learned at each step of the way. Each stage of this workflow -from data exploration and cleaning, feature engineering, modeling and visualizations- offers insights, reinforces understanding of key concepts, and promotes learning and sharpening technical skills. 

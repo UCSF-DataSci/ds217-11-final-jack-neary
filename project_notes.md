@@ -8,7 +8,6 @@
 - printed all datatypes; converted measurement timestamp to datetime and made this the index; precipitation type changed to string
 - found all missing values, columns with many missing values were forward filled, which is acceptable with timeseries data because it uses the most recent value to impute the missing value(s) preserving temporal sequence
 - missing values for barometric pressure column were dropped because it was such a low percentage (<5%) therefore can drop and won't harm any modeling down the line
-- *after* imputing then checked for outliers and filtered for any values greater than 3*iqr or less than 3*iqr
 - cleaned data from 196,138 rows to 149,408 after handling for outliers
 
 # Q3 Data Wrangling
