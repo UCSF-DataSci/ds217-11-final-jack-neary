@@ -1,7 +1,7 @@
 metric,linear_regression,random_forest,xgboost
-train_r^2,0.6098,0.9848,0.864
-test_r^2,0.8028,0.8589,0.8897
-train_rmse,6.667,1.316,3.935
-test_rmse,4.417,3.737,3.304
-train_mae,4.647,0.683,2.486
-test_mae,3.466,2.452,2.24
+train_r^2,0.6504,0.9871,0.8725
+test_r^2,0.8224,0.87,0.9004
+train_rmse,6.325,1.216,3.82
+test_rmse,4.359,3.729,3.264
+train_mae,4.268,0.628,2.392
+test_mae,3.385,2.385,2.132

@@ -5,7 +5,7 @@ KEY FINDINGS SUMMARY
 - Made me feel weird so I chose to use Random Forest becuause train and test showed a somewhat normal pattern
 
 FEATURE IMPORTANCE
-Most important feature: Wet Bulb Temperature: 0.5872
+Most important feature: Wet Bulb Temperature: 0.6367
 
 TEMPORAL PATTERNS
 - clear seasonal pattern for dew point feature

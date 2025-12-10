@@ -76,8 +76,4 @@ Data Type Conversions:
 
 Duplicates removed: 0
 
-Rows after cleaning: 149408---
-AUTOMATED EDIT: CAPPED `Total Rain` TO 200
-Rows with `Total Rain` > 200 before cap: 33748 (22.59%)
-Rationale: dataset contains very large `Total Rain` values that likely represent cumulative totals; for modeling we prefer bounded interval-like totals or to use `Interval Rain` instead. Capping at 200 mm enforces the domain bound used elsewhere in Q2. If values >200 are legitimately cumulative (months), consider using `Interval Rain` or transforming the variable instead.
-Change applied programmatically by assistant.
+Rows after cleaning: 149408

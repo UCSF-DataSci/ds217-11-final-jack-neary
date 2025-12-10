@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # path to notebooks
-NOTEBOOK_DIR="/Users/jack/ucsf_courses_resources/fall 2025/ds_217/ds217-11-final-jack-neary/run_project.sh"
+NOTEBOOK_DIR="/Users/jack/ucsf_courses_resources/fall 2025/ds_217/ds217-11-final-jack-neary"
+OUTPUT_DIR="$NOTEBOOK_DIR/output"
+
+mkdir -p "$OUTPUT_DIR"
 
 # list of notebooks in order
 NOTEBOOKS=(
@@ -17,7 +20,7 @@ NOTEBOOKS=(
 # loop through notebooks and execute each
 for NB in "${NOTEBOOKS[@]}"; do
     echo "Running $NB ..."
-    jupyter nbconvert --to notebook --execute --inplace "$NOTEBOOK_DIR/$NB"
+    jupyter nbconvert --to notebook --execute "$NOTEBOOK_DIR/$NB" --output "$OUTPUT_DIR/$NB"
     if [ $? -eq 0 ]; then
         echo "$NB completed successfully!"
     else
@@ -27,3 +30,4 @@ for NB in "${NOTEBOOKS[@]}"; do
 done
 
 echo "All notebooks executed!"
+
