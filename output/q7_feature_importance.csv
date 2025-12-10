@@ -1,4 +1,4 @@
-feature,rf_importance,xgb_importance
+feature,importance,xgb_importance
 Barometric Pressure,0.09250433222653837,0.09740454
 Solar Radiation,0.016388778779103545,0.092909575
 Solar Radiation_log,0.015663875696609493,
