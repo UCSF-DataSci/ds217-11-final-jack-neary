@@ -1,0 +1,12 @@
+TRAIN/TEST SPLIT INFORMATION
+============================
+
+Split Method: Temporal (80/20 split by time)
+Training Set Size: 119,525 samples
+Test Set Size: 29,883 samples
+
+Training Date Range: 2015-04-25 09:00:00 to 2023-11-09 05:00:00
+Test Date Range: 2023-11-09 06:00:00 to 2025-11-29 16:00:00
+
+Number of Features: 25
+Target Variable: dew_point
